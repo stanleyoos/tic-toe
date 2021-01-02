@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+}
+
+.board {
+  width: 306px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  gap: 2px;
+}
+
+.box {
+  border: 1px solid rgb(199, 195, 195);
+  cursor: pointer;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.box:hover {
+  background-color: rgb(201, 197, 193);
+}
